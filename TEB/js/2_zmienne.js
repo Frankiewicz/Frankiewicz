@@ -27,3 +27,6 @@ dzielenie = x / y;
 var mnozenie = x * y;
 var modulo = x % y;
 console.log(modulo);
+
+
+
