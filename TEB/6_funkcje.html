@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+</html>
+
+
+
+        <script>
+            function poleObjetosc(a,b,h){
+                var pole = a * b;
+                var objetosc = pole * h;
+                var wynik = [pole, objetosc];
+                return wynik;
+            }
+        </script>
+<body>
+    <script>
+        console.log(poleObjetosc(2,3,4));
+        document.write("Pole: " + poleObjetosc(2,3,4)[0] + "cm<sup>2</sup><br>");
+        document.write("Objetosc: " + poleObjetosc(2,3,4)[1] + "cm<sup>3</sup><br>");
+
+
+        var a = prompt("Podaj szerokość");
+        var b = prompt("Podaj długość");
+        var h = prompt("Podaj wysokość");
+        var x = prompt("Podaj wartość", "0 - pole, 1 - objętość");
+        if(x==0){
+            document.write("Pole: " + poleObjetosc(a,b,h)[x] + "cm<sup>2</sup><br>");
+
+        }else if (x==1){
+            document.write("Objętość: " + poleObjetosc(a,b,h)[x] + "cm<sup>3</sup>");
+
+        }else{
+            document.write("Podałeś błędne dane!<br>");
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+    </body>
+
